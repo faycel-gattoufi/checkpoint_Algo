@@ -1,0 +1,27 @@
+
+ALGORITHM checkpoint
+VAR
+text : STRING := "hal 3amla lmchouma."
+w : INTEGER := 0 
+// w = words number
+v : integer :=0
+// v = vowels number 
+l : integer := text.length
+// l = sentence's length
+
+BEGIN
+
+
+FOR i FROM 0 TO text.length DO 
+
+SWITCH (text[i]) DO
+    case ' ' : w := w + 1
+    case 'a','e','i','y','o','u' : v:= v+1
+    
+END_SWITCH
+
+END_FOR
+Write(w + 1) 
+Write(v) 
+Write(l) 
+END
